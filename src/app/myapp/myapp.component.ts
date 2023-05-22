@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit, OnChanges, SimpleChanges, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-myapp',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./myapp.component.scss']
 })
 
-export class MyappComponent {
+export class MyappComponent implements OnInit, OnChanges, AfterViewInit{
    myAppName:string='tesla'
    isDisabled:boolean=false
    show:boolean=false
@@ -19,6 +19,21 @@ export class MyappComponent {
                {id: 6, name:'Keerthana',age:15, native:'jayankondam'}
               ]
   name:string=''
+  constructor(){
+    console.log("inside constructor");
+    
+  }
+  ngAfterViewInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    throw new Error('Method not implemented.');
+  }
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+    console.log('inside ngOnInit');
+    
+  }
 
        onClick(e:any){
         this.myAppName='BMW'

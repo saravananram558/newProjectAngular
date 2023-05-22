@@ -13,30 +13,11 @@
 </div>
 {{myName.value}}
 <p *ngIf="show; else elseBlock">Directives</p>
-<ng-template #elseBlock><p>Dont come here</p></ng-template>
+<ng-template #elseBlock><p>Directives</p></ng-template>
 <!-- <p *ngIf="!show">No Directives</p> -->
 <ul>
     <li *ngFor="let e of array; last as l">{{l}} {{e}}</li>
 </ul>
-
-<table>
-<tr>
-    <th>id</th>
-    <th>Name</th>
-    <th>age</th>
-    <th>native</th>
-</tr>
-<tr>
-<td>{{arrObj.id}}</td>
-<td>{{arrObj.name}}</td>
-<td>{{}}</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
 
 <p><b>two way Databinding</b></p>
 <input type="text" [(ngModel)]="name">

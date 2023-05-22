@@ -1,0 +1,69 @@
+Angular
+    It is a framework for frontend design which is used to make Single Page Application and it was developed by google
+eg: google products-> gmail, gpay, gmap
+    
+Advantages
+    Oops
+    Open source
+    Platform independent
+    Databinding
+    TypeScript
+    less code framework
+    Dependency Injection
+    Speed performance
+    Well structured Architecture 
+    Everthing group at same place
+    Directives
+
+Node modules
+    it contains Node libraries
+--------------------------------------------------------------------------------------------------------------------------------
+Src
+    It is Entry Level Folder
+
+index.html
+    it is the main html file which executes at first
+
+main.TypeScript
+    it is the entry point    
+
+style.scss
+    You can add global styles to this file, and also import other style files which reflect to the entire angular application
+    
+favicon.ico
+    This file is used to define icon to the webpage
+
+assests
+    To maintain the external files like video, audio, images etc..,.
+--------------------------------------------------------------------------------------------------------------------------------
+app
+    it also known as parent component/ main component/ root component
+    it contains many files
+
+component
+    it contains group of files(html,css,js,spec.ts)
+
+app.component.html
+    it contains html tags
+
+app.component.scss
+    scss - saasy(புத்திசாலித்தனமான) cascading style sheets 
+    it contains css properties 
+
+app.component.ts
+    it contains logics 
+
+app.component.spec.ts
+    spec
+    it used for testing purpose 
+
+app-routing.modules.ts
+    routing -> 
+    it is used to set path for each component
+
+app.modules.ts
+    module(Set of separate parts that can be joined together to form a larger object)
+    module -> collection of components
+    it is the main module used to group multiple component modules 
+    it is also used to import the packages from .angular eg: formModules, reactiveFormModules
+    
