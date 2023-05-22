@@ -1,4 +1,5 @@
 <h2>My App</h2>
-<app-myapp [property]="title" [users]="userList"></app-myapp> 
+<h1>{{message}}</h1>
+<app-myapp (outtest)="captureChild($event)" [property]="title" [users]="userList"></app-myapp> 
 <!-- <app-lifecycle></app-lifecycle>
 <app-practice></app-practice> -->

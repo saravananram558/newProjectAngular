@@ -17,6 +17,8 @@
             <td>{{user.native}}</td>
         </tr>
     </table>
+
+<h2>Event Binding</h2>
 </div>
 <div>
     <input type="text" value="{{myAppName}}"> 
@@ -39,3 +41,7 @@
 <p><b>two way Databinding</b></p>
 <input type="text" [(ngModel)]="name">
 <p>{{name}}</p>
+
+<p> child to parent</p>
+
+<button (click)="sendToParent()">BUTTON</button>

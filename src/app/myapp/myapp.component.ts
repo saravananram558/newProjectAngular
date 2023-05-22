@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, AfterContentChecked,AfterContentInit, OnDestroy, DoCheck } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, AfterContentChecked,AfterContentInit, OnDestroy, DoCheck, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-myapp',
@@ -7,7 +7,7 @@ import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, Afte
 })
 
 export class MyappComponent implements OnInit, OnChanges, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy, DoCheck{
-   myAppName:string='tesla'
+   myAppName:string='TESLA'
    isDisabled:boolean=false
    show:boolean=false
    array:string[]=['saravanan','uma akka','muthu']
@@ -16,6 +16,10 @@ export class MyappComponent implements OnInit, OnChanges, AfterViewInit, AfterCo
 
   @Input() public property:any;
   @Input() public users:any;
+
+  @Output() public outtest=new EventEmitter()
+  
+  
   constructor(){
     console.log("inside constructor"); 
   }
@@ -55,5 +59,7 @@ export class MyappComponent implements OnInit, OnChanges, AfterViewInit, AfterCo
         this.array.push('maha')
         console.log(e);    
        }
-    
+       sendToParent(){
+      this.outtest.emit('saravanan')
+    }
 }
