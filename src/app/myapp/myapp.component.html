@@ -1,6 +1,23 @@
 <p>myapp works!</p>
 {{myAppName}}  
 {{"welcome"+myAppName}}
+<h2>title {{property}}</h2>
+<div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>native</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.native}}</td>
+        </tr>
+    </table>
+</div>
 <div>
     <input type="text" value="{{myAppName}}"> 
 </div>

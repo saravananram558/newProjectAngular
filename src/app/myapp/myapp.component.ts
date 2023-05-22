@@ -1,4 +1,4 @@
-import { Component,OnInit, OnChanges, SimpleChanges, AfterViewInit, AfterContentChecked,AfterContentInit, OnDestroy, DoCheck } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, AfterContentChecked,AfterContentInit, OnDestroy, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-myapp',
@@ -11,14 +11,11 @@ export class MyappComponent implements OnInit, OnChanges, AfterViewInit, AfterCo
    isDisabled:boolean=false
    show:boolean=false
    array:string[]=['saravanan','uma akka','muthu']
-   arrObj:any=[{id: 1, name:'balamurugan',age:19, native:'jayankondam'},
-               {id: 2, name:'Rajarajan',age:15, native:'Annaikarai'},
-               {id: 3, name:'Shakthivel',age:15, native:'Kattupiringam'},
-               {id: 4, name:'Sudarvizhi',age:21, native:'Annaikarai'},
-               {id: 5, name:'Malarvizhi',age:20, native:'Mannuzhi'},
-               {id: 6, name:'Keerthana',age:15, native:'jayankondam'}
-              ]
+   
   name:string=''
+
+  @Input() public property:any;
+  @Input() public users:any;
   constructor(){
     console.log("inside constructor"); 
   }

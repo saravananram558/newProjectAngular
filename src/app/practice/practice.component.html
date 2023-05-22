@@ -1,1 +1,21 @@
 <p>practice works!</p>
+<table>
+<thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Email</th>
+</thead>
+
+<tbody *ngIf="i.length">
+    <tr *ngFor="let a of i">
+        <td>{{a.name}}</td>
+        <td>{{a.age}}</td>
+        <td>{{a.email}}</td>
+    </tr>
+</tbody>
+<tbody *ngIf="i.length==0">
+    <tr>
+       No data
+    </tr>
+</tbody>
+</table>
