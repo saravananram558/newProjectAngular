@@ -1,4 +1,4 @@
-import { Component,OnInit, OnChanges, SimpleChanges, AfterViewInit } from '@angular/core';
+import { Component,OnInit, OnChanges, SimpleChanges, AfterViewInit, AfterContentChecked,AfterContentInit, OnDestroy, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-myapp',
@@ -6,7 +6,7 @@ import { Component,OnInit, OnChanges, SimpleChanges, AfterViewInit } from '@angu
   styleUrls: ['./myapp.component.scss']
 })
 
-export class MyappComponent implements OnInit, OnChanges, AfterViewInit{
+export class MyappComponent implements OnInit, OnChanges, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy, DoCheck{
    myAppName:string='tesla'
    isDisabled:boolean=false
    show:boolean=false
@@ -20,25 +20,43 @@ export class MyappComponent implements OnInit, OnChanges, AfterViewInit{
               ]
   name:string=''
   constructor(){
-    console.log("inside constructor");
-    
+    console.log("inside constructor"); 
   }
-  ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-  }
-  ngOnChanges(changes: SimpleChanges): void {
-    throw new Error('Method not implemented.');
-  }
-  ngOnInit(): void {
+  ngDoCheck(): void {
     // throw new Error('Method not implemented.');
-    console.log('inside ngOnInit');
+    console.log("inside DoCheck");
     
   }
 
+  ngAfterContentInit(): void {
+    // throw new Error('Method not implemented.');
+    console.log("inside ngAfterContentInit");
+  }
+  ngOnDestroy(): void {
+    // throw new Error('Method not implemented.');
+    console.log("inside ngOnDestroy");
+  }
+  ngAfterContentChecked(): void {
+    // throw new Error('Method not implemented.');
+    console.log("inside ngAfterContentChecked");
+  }
+  ngAfterViewInit(): void {
+    // throw new Error('Method not implemented.');
+    console.log("inside ngAfterViewInit");
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    // throw new Error('Method not implemented.');
+    console.log("inside ngOnChanges");
+  }
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+    console.log('inside ngOnInit'); 
+  }
        onClick(e:any){
         this.myAppName='BMW'
         this.isDisabled=!this.isDisabled
         this.array.push('maha')
         console.log(e);    
        }
+    
 }

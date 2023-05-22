@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MyappComponent } from './myapp/myapp.component';
 import { FormsModule } from '@angular/forms';
 import { PracticeComponent } from './practice/practice.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyappComponent,
-    PracticeComponent
+    PracticeComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
