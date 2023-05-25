@@ -7,7 +7,7 @@ import { Component,OnInit, OnChanges, SimpleChanges, AfterViewInit, AfterContent
 export class LifecycleComponent implements OnInit, OnChanges, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy {
 
   ngAfterContentInit(): void {
-    // throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');  
     console.log("inside ngAfterContentInit");
   }
   ngOnDestroy(): void {
