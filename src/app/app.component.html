@@ -1,5 +1,17 @@
+<div class="app">
 <h2>My App</h2>
 <h1>{{message}}</h1>
+<div >
+<form  *ngFor="let a of show">
+    <p>{{a.name}}</p>
+    <p>{{a.age}}</p>
+    <hr>
+</form>
+
+</div>
+<app-lifecycle></app-lifecycle>
+<app-practice></app-practice>
+<br>
 <app-myapp (outtest)="captureChild($event)" [property]="title" [users]="userList"></app-myapp> 
-<!-- <app-lifecycle></app-lifecycle>
-<app-practice></app-practice> -->
+
+</div>

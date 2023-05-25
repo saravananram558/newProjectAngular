@@ -8,7 +8,7 @@ import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, Afte
 
 export class MyappComponent implements OnInit, OnChanges, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy, DoCheck{
    myAppName:string='TESLA'
-   isDisabled:boolean=false
+   isDisabled:boolean=false 
    show:boolean=false
    array:string[]=['saravanan','uma akka','muthu']
    

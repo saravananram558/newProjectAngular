@@ -7,6 +7,7 @@ import { MyappComponent } from './myapp/myapp.component';
 import { FormsModule } from '@angular/forms';
 import { PracticeComponent } from './practice/practice.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ServicingService } from './servicing.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServicingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,12 +1,16 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, OnInit } from '@angular/core';
 import { MyappComponent } from './myapp/myapp.component';
+import { ServicingService } from './servicing.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnInit {
+  constructor(public con:ServicingService) {
+    
+  }
   
   title = 'Saravanan ProjectAngular';
   userList=[{id: 1, name:'Balamurugan',age:19, native:'Jayankondam'},
@@ -29,5 +33,11 @@ export class AppComponent implements AfterViewInit {
     this.message=this.child.myAppName
     
   }
+  show:any;
+  
+  ngOnInit():void{
+    this.show=this.con.hereTheList()
+  }
+ 
 }
 
