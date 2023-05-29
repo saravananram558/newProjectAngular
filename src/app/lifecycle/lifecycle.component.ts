@@ -30,4 +30,6 @@ export class LifecycleComponent implements OnInit, OnChanges, AfterViewInit, Aft
     // throw new Error('Method not implemented.');
     console.log('inside ngOnInit'); 
   }
+
+  
 }

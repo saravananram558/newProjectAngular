@@ -8,7 +8,7 @@ import { ServicingService } from './servicing.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit, OnInit {
-  constructor(public con:ServicingService) {
+  constructor(public servicing:ServicingService) {
     
   }
   
@@ -33,10 +33,10 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.message=this.child.myAppName
     
   }
+
   show:any;
-  
   ngOnInit():void{
-    this.show=this.con.hereTheList()
+    this.show=this.servicing.hereTheList()
   }
  
 }
