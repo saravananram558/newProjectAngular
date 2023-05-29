@@ -1,7 +1,7 @@
 <div class="myapp">
-      <p>myapp works!</p>
-      {{myAppName}}  
-      {{"welcome"+myAppName}}
+      <h2>myapp works!</h2>
+      <p>{{myAppName}}</p>  
+      <p>{{"we can concadinate string with variable value"+myAppName}}</p>
       <h2>title {{property}}</h2>
       <div>
           <table>
@@ -38,12 +38,14 @@
       <ul>
           <li *ngFor="let e of array; last as l">{{l}} {{e}}</li>
       </ul>
-      
-      <p><b>two way Databinding</b></p>
-      <input type="text" [(ngModel)]="name">
-      <p>{{name}}</p>
-      
-      <p> child to parent</p>
-      
-      <button (click)="sendToParent()">BUTTON</button> 
+      <div>
+        <p><b>two way Databinding</b></p>
+        <input type="text" [(ngModel)]="name">
+        <p>{{name}}</p>
+      </div>
+
+      <div>
+        <p> child to parent</p>
+        <button (click)="sendToParent()">BUTTON</button> 
+      </div>      
 </div>

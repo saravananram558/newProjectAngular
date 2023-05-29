@@ -11,7 +11,8 @@ export class ServicingService {
       { name:'saravanan',age:23},
       { name:'muthu',age:21},
       { name:'mohan',age:21},
-      { name:'ragul',age:23}
+      { name:'ragul',age:23},
+      { name:'mohan',age:21}
     ]
   }
 }

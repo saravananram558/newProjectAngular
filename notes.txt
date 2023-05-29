@@ -3,23 +3,23 @@ Angular
 eg: google products-> gmail, gpay, gmap
     
 Advantages
-    Oops
+    Oops (angular have TypeScript, TypeScript have Oops)
     Open source
     Platform independent
     Databinding
     TypeScript
     less code framework
-    Dependency Injection
-    Speed performance
+    Dependency Injection 
+    Speed performance 
     Well structured Architecture 
-    Everthing group at same place
-    Directives
+    Everything group at same place 
+    Directives 
 
 Node modules
     it contains Node libraries
 --------------------------------------------------------------------------------------------------------------------------------
 Src
-    It is Entry Level Folder
+    It is Entry Level Folder 
 
 index.html
     it is the main html file which executes at first
