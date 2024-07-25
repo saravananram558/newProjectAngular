@@ -8,18 +8,26 @@ import { FormsModule } from '@angular/forms';
 import { PracticeComponent } from './practice/practice.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ServicingService } from './servicing.service';
+import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorMessageComponent } from './error-message/error-message.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyappComponent,
     PracticeComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    HomeComponent,
+    ErrorMessageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [ServicingService],
   bootstrap: [AppComponent]

@@ -30,7 +30,7 @@ export class AppComponent implements AfterViewInit, OnInit {
   
   ngAfterViewInit(): void {
     // throw new Error('Method not implemented.');
-    this.message=this.child.myAppName
+    this.message=this.child?.myAppName
     
   }
 
